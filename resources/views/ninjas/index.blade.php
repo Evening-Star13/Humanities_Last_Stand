@@ -4,7 +4,7 @@
   <ul>
     @foreach($ninjas as $ninja)
     <li>
-      <x-card>
+      <x-card href="/ninjas/{{ $ninja['id'] }}" :highlight="$ninja['gender'] == 'Male'">
         <h3>{{ $ninja['name'] }}</h3>
       </x-card>
     </li>

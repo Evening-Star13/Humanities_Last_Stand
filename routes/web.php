@@ -8,9 +8,10 @@ Route::get('/', function () {
 
 Route::get('/ninjas', function () {
   $ninjas = [
-    ['name' => 'Goku', 'skill' => 99, 'id' => '1'],
-    ['name' => 'Vegeta', 'skill' => 85, 'id' => '2'],
-    ['name' => 'Brolly', 'skill' => 90, 'id' => '3'],
+    ['name' => 'Goku', 'gender' => 'Male', 'id' => '1'],
+    ['name' => 'Vegeta', 'gender' => 'Male', 'id' => '2'],
+    ['name' => 'Brolly', 'gender' => 'Male', 'id' => '3'],
+    ['name' => 'Bulma', 'gender' => 'Female', 'id' => '4'],
   ];
 
   return view('ninjas.index', ["greeting" => "Hello", "ninjas" => $ninjas]);
