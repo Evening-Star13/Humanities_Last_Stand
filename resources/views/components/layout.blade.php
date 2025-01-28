@@ -12,6 +12,7 @@
   <header>
     <nav>
       <h1>Citizen Registry</h1>
+      <a href="/">Home</a>
       <a href="/ninjas">All Specimens</a>
       <a href="/ninjas/create">Register Specimen</a>
     </nav>

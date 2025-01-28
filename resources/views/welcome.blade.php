@@ -8,8 +8,9 @@
   @vite('resources/css/app.css')
 </head>
 <body class='px-8 py-12 text-center'>
-  <h1>Welcome to the Human Registry Correspondence System</h1>
-  <p>Click the Button below to self Register</p>
+  <h1>Department of Human Registration</h1>
+  <h2>This is where you shed your last bit of FREEDOM!</h2>
+  <p>Register Below by clicking BUTTON</p>
   <a href="/ninjas" class="inline-block mt-4 btn">
     Register
   </a>
