@@ -17,7 +17,12 @@ class LivestockFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'first-name' => fake()->name(),
+            'last-name' => fake()->name(),
+            'gender' => fake()->randomElement(['male', 'female']),
+            'DOB' => fake()->date(),
+            'email' => fake()->email(),
+            'background' => fake()->realText(250)
         ];
     }
 }
