@@ -8,10 +8,10 @@ Route::get('/', function () {
 
 Route::get('/ninjas', function () {
   $ninjas = [
-    ['name' => 'Goku', 'gender' => 'Male', 'id' => '1'],
-    ['name' => 'Vegeta', 'gender' => 'Male', 'id' => '2'],
-    ['name' => 'Brolly', 'gender' => 'Male', 'id' => '3'],
-    ['name' => 'Bulma', 'gender' => 'Female', 'id' => '4'],
+    ['first-name' => 'Chris', 'last-name' => 'Barranger', 'gender' => 'Male', 'id' => '1'],
+    ['first-name' => 'Rebecca', 'last-name' => 'Barranger', 'gender' => 'Female', 'id' => '2'],
+    ['first-name' => 'Devin', 'last-name' => 'Patton', 'gender' => 'Male', 'id' => '3'],
+    ['first-name' => 'Jason', 'last-name' => 'Borden', 'gender' => 'Male', 'id' => '4'],
   ];
 
   return view('ninjas.index', ["greeting" => "Hello", "ninjas" => $ninjas]);
