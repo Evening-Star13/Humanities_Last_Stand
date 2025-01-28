@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* need PostCSS Language Support to remove warnings */
+
+body {
+    @apply text-gray-700 bg-gray-100;
+    font-family: "Rubik";
+}
+h1 {
+    @apply text-2xl font-bold text-red-500;
+}
+h2 {
+    @apply my-4 text-xl font-bold;
+}
+h3 {
+    @apply my-4 text-lg font-bold;
+}
+ul {
+    @apply my-10;
+}
+p {
+    @apply my-2;
+}
+
+/* header */
+header {
+    @apply bg-white;
+
+    nav {
+        @apply flex items-center max-w-screen-lg gap-5 px-12 py-4 mx-auto;
+    }
+    h1 {
+        @apply mr-auto;
+    }
+}
+
+/* form elements */
+form {
+    @apply max-w-screen-sm;
+}
+input,
+select,
+textarea {
+    @apply block w-full p-2 mt-2 mb-4;
+}
+
+/* custom classes */
+.container {
+    @apply max-w-screen-lg px-12 py-8 mx-auto;
+}
+.card {
+    @apply flex items-center justify-between px-3 py-3 my-2 bg-white border border-gray-200 rounded;
+}
+.highlight {
+    @apply border-l-4 border-l-red-500;
+}
+.btn {
+    @apply px-3 py-2 bg-gray-200 rounded hover:bg-red-500 hover:text-white;
+}
