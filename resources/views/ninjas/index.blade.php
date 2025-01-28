@@ -1,13 +1,13 @@
 <x-layout>
-  <h2>Currently Warehoused Humans</h2>
+  <h2>Currently Available Ninjas</h2>
 
   <ul>
     @foreach($ninjas as $ninja)
-    <li>
-      <x-card href="/ninjas/{{ $ninja['id'] }}" :highlight="$ninja['gender'] == 'Male'">
-        <h3>{{ $ninja['first-name'] }}</h3>
-      </x-card>
-    </li>
+      <li>
+        <x-card :highlight="$ninja['skill'] > 70" href="{{route('ninjas.show', $ninja->id)}}">
+          <h3>{{ $ninja['name'] }}</h3>
+        </x-card>
+      </li>
     @endforeach
   </ul>
 </x-layout>

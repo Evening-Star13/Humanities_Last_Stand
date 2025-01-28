@@ -2,17 +2,17 @@
 
 namespace Database\Seeders;
 
+use App\Models\Ninja;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Livestock;
 
-class LivestockSeeder extends Seeder
+class NinjaSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Livestock::factory()->count(50)->create();
+      Ninja::factory()->count(50)->create();
     }
 }

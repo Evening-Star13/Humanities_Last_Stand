@@ -1,3 +1,3 @@
 <x-layout>
-  <h2>Registration Page</h2>
+  <h2>Create Page</h2>
 </x-layout>
